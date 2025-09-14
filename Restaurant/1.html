@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aai Bhook Lagli Ahey!!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #fff8f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-image: url(res.png);
+            background-size: cover;
+            height: 500px;
+            /* background: #0b0b0b; */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 4px solid #e67328;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: inline;
+            background-color: lab(18.7% 15.13 20.4);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000cee;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .menu h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #e67328;
+        }
+
+        .menu article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu h3 {
+            margin: 15px 0 10px;
+            color: #ff6600;
+        }
+
+        .menu img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .menu pre {
+            white-space: pre-wrap;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .menu p {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .order h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin: 30px 0 20px;
+            color: #e67328;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: inline-block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        form input[type="number"],
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        form input[type="checkbox"],
+        form input[type="radio"] {
+            margin-right: 6px;
+        }
+
+        form p {
+            margin: 15px 0 5px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+
+        form input[type="submit"] {
+            background: #ff6600;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background: #e65c00;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Aai Bhook Lagli Ahey!!</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order-form">Place Your Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="menu" id="menu">
+            <h2>Menu</h2>
+            <article>
+                <h3>Chicken Thali</h3>
+                <img src="chicken.jpg" alt="" width="400px" id="img">
+                <pre>Embark on a culinary journey with our signature Chicken Thali, a hearty and balanced meal that captures the true essence of traditional Maharashtrian cuisine.
+This platter is a celebration of rich, homestyle flavours, designed to offer a complete and unforgettable dining experience.</pre>
+                <p>Price:<i>₹250</i></p>
+                <br>
+                <h3>Prawns Thali</h3>
+                <img src="prawns.jpg" alt="" width="400px">
+                <pre>A taste of the Konkan coast on a platter.
+Featuring our tangy Prawn Curry and Crispy Rawa Fried Prawns, served with Rice Bhakri, steamed rice, and refreshing Solkadhi.</pre>
+                <p>Price:<i>₹200</i></p>
+                <br>
+
+                <h3>Veg Thali</h3>
+                <img src="veg.jpg" alt="" width="400px">
+                <pre>A wholesome and satisfying meal featuring a selection of our daily fresh vegetable curries, dal, soft Chapatis, steamed rice, and a traditional sweet.
+A true taste of home.</pre>
+                <p>Price:<i>₹120</i></p>
+            </article>
+        </section>
+        <br>
+        <br>
+        <section class="order" id="order-form">
+            <h2>Place Your Order</h2>
+            <form action="#" method="post">
+                <label for="Chicken Thali">Chicken Thali (₹250)</label>
+                <input type="number" name="Chicken Thali" min="0" max="50">
+                <br>
+                <label for="Prawns Thali">Prawns Thali (₹200)</label>
+                <input type="number" name="Prawns Thali" min="0" max="50">
+                <br>
+                <label for="Veg Thali">Veg Thali (₹120)</label>
+                <input type="number" name="Veg Thali" min="0" max="50">
+                <br>
+                <p>Sides:</p>
+                <input type="checkbox" id="Fries">
+                <label for="Fries">Fries</label>
+                <input type="checkbox" id="Soup">
+                <label for="Soup">Soup</label>
+                <input type="checkbox" id="Salad">
+                <label for="Salad">Salad</label>
+                <input type="checkbox" id="Solkadhi">
+                <label for="Solkadhi">Solkadhi</label>
+
+                <p>Sauce:</p>
+                <input type="radio" name="sauce" id="no-sauce" value="none" checked>
+                <label for="no-sauce">No Sauce</label>
+
+                <input type="radio" name="sauce" id="extra-sauce" value="extra">
+                <label for="extra-sauce">Extra Sauce</label>
+                <br>
+                <label for="requests">Special Requests:</label><br>
+                <textarea id="requests" name="requests" rows="3" cols="30"
+                    placeholder="Write here..."></textarea><br><br>
+
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
